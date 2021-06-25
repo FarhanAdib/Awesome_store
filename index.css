@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: black;
+  color: white;
+  position: relative;
+  top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.landing {
+  width: 100vw;
+  height: 80vh;
+  background-image: url("image.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+h1 {
+  font-size: 120px;
+  position: relative;
+  top: -120px;
+}
+
+h2 {
+  background-color: black;
+  color: white;
+  position: relative;
+  top: -120px;
+  padding: 5px;
+  font-size: 70px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 10px;
+}
+
+.i {
+  width: 50px;
+  height: 50px;
+  color: white;
+}
+
+.store {
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+}
+
+.card {
+  width: 300px;
+  margin: 30px;
+  -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.047), 0 6.7px 5.3px rgba(0, 0, 0, 0.057), 0 12.5px 10px rgba(0, 0, 0, 0.059), 0 22.3px 17.9px rgba(0, 0, 0, 0.059), 0 41.8px 33.4px rgba(0, 0, 0, 0.058);
+          box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.047), 0 6.7px 5.3px rgba(0, 0, 0, 0.057), 0 12.5px 10px rgba(0, 0, 0, 0.059), 0 22.3px 17.9px rgba(0, 0, 0, 0.059), 0 41.8px 33.4px rgba(0, 0, 0, 0.058);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.card-img {
+  width: 100%;
+  background-image: url("image.jpg");
+  height: 220px;
+  background-size: cover;
+}
+
+p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media all and (max-width: 696px) {
+  h1 {
+    font-size: 50px;
+    position: relative;
+    top: -120px;
+  }
+  h2 {
+    background-color: black;
+    color: white;
+    position: relative;
+    top: -120px;
+    padding: 5px;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  .card {
+    width: 300px;
+    margin: none;
+    -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.047), 0 6.7px 5.3px rgba(0, 0, 0, 0.057), 0 12.5px 10px rgba(0, 0, 0, 0.059), 0 22.3px 17.9px rgba(0, 0, 0, 0.059), 0 41.8px 33.4px rgba(0, 0, 0, 0.058);
+            box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.047), 0 6.7px 5.3px rgba(0, 0, 0, 0.057), 0 12.5px 10px rgba(0, 0, 0, 0.059), 0 22.3px 17.9px rgba(0, 0, 0, 0.059), 0 41.8px 33.4px rgba(0, 0, 0, 0.058);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .store {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+}
+
+@media all and (max-width: 1420px) and (min-width: 697px) {
+  h1 {
+    font-size: 50px;
+    position: relative;
+    top: -120px;
+  }
+  h2 {
+    background-color: black;
+    color: white;
+    position: relative;
+    top: -120px;
+    padding: 5px;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  .card {
+    width: 300px;
+    margin: none;
+    -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.047), 0 6.7px 5.3px rgba(0, 0, 0, 0.057), 0 12.5px 10px rgba(0, 0, 0, 0.059), 0 22.3px 17.9px rgba(0, 0, 0, 0.059), 0 41.8px 33.4px rgba(0, 0, 0, 0.058);
+            box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.047), 0 6.7px 5.3px rgba(0, 0, 0, 0.057), 0 12.5px 10px rgba(0, 0, 0, 0.059), 0 22.3px 17.9px rgba(0, 0, 0, 0.059), 0 41.8px 33.4px rgba(0, 0, 0, 0.058);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .store {
+    width: 100vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+}
+/*# sourceMappingURL=index.css.map */
